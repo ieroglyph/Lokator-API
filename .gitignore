@@ -1,0 +1,8 @@
+/ipch
+*.suo
+/Debug
+/Release
+/libgeometry/Debug
+/libgeometry/Release
+*.opensdf
+*.sdf

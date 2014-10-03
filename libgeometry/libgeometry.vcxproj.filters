@@ -35,5 +35,11 @@
     <ClInclude Include="libgeometry.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ISegment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

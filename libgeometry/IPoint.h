@@ -1,8 +1,10 @@
 #pragma once
 
+#include "Interface.h"
+
 namespace geometry
 {
-	class IPoint
+	class IPoint : public Interface
 	{
 	public:
 		virtual double x() = 0;

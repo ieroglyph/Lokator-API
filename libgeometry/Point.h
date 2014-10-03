@@ -21,5 +21,6 @@ namespace geometry
 		virtual Point& y(double value);
 		virtual double z();
 		virtual Point& z(double value);
+		virtual void Release();
 	};
 }

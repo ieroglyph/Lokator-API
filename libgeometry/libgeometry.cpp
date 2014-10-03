@@ -1,4 +1,9 @@
-// libgeometry.cpp : Defines the exported functions for the DLL application.
-//
+#include "libgeometry.h"
 
+#include "Point.h"
 
+LIBGEOMETRY_API CreatePoint(geometry::IPoint* p)
+{
+	p = new geometry::Point();
+	return 0;
+}

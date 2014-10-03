@@ -89,12 +89,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="geometry.cpp" />
     <ClCompile Include="libgeometry.cpp" />
     <ClCompile Include="Point.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="geometry.h" />
+    <ClInclude Include="libgeometry.h" />
     <ClInclude Include="IPoint.h" />
     <ClInclude Include="Point.h" />
   </ItemGroup>

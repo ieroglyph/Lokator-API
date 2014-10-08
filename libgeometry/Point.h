@@ -16,11 +16,11 @@ namespace geometry
 		Point(double x, double y, double z);
 		~Point();
 		virtual double x();
-		virtual Point& x(double value);
+		virtual IPoint* x(double value);
 		virtual double y();
-		virtual Point& y(double value);
+		virtual IPoint* y(double value);
 		virtual double z();
-		virtual Point& z(double value);
+		virtual IPoint* z(double value);
 		virtual void Release();
 	};
 }

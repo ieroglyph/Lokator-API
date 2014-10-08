@@ -32,10 +32,10 @@ namespace geometry
 		return _x;
 	}
 
-	Point& Point::x(double value)
+	IPoint* Point::x(double value)
 	{
 		_x = value;
-		return *this;
+		return this;
 	}
 
 	double Point::y()
@@ -43,10 +43,10 @@ namespace geometry
 		return _y;
 	}
 
-	Point& Point::y(double value)
+	IPoint* Point::y(double value)
 	{
 		_y = value;
-		return *this;
+		return this;
 	}
 
 	double Point::z()
@@ -54,9 +54,14 @@ namespace geometry
 		return _z;
 	}
 
-	Point& Point::z(double value)
+	IPoint* Point::z(double value)
 	{
 		_z = value;
-		return *this;
+		return this;
+	}
+
+	void Point::Release()
+	{
+		delete this;
 	}
 }

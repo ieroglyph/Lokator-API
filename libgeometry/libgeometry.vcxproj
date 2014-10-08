@@ -94,7 +94,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Interface.h" />
-    <ClInclude Include="ISegment.h" />
     <ClInclude Include="libgeometry.h" />
     <ClInclude Include="IPoint.h" />
     <ClInclude Include="Point.h" />

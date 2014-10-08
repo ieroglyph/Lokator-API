@@ -1,7 +1,6 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 
 #include <Windows.h>
-#include "geometry.h"
 
 bool APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,

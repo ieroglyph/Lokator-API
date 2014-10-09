@@ -2,16 +2,11 @@
 
 #include "IPoint.h"
 
-#define LIBGEOMETRYRESULT unsigned int
-
-#ifdef LIBGEOMETRY_EXPORTS
-#    define LIBGEOMETRY_API __declspec(dllexport) LIBGEOMETRYRESULT
+#ifdef __cplusplus
+#define EXTERN_C extern "C"
 #else
-#    define LIBGEOMETRY_API __declspec(dllimport) LIBGEOMETRYRESULT
+#define EXTERN_C extern
 #endif
 
-extern "C"
-{
-	LIBGEOMETRY_API CreatePoint(geometry::IPoint* p);
-}
 
+EXTERN_C LIBGEOMETRY_API geometry::IPoint* __stdcall CreatePoint();

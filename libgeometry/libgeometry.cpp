@@ -1,6 +1,7 @@
 #include "libgeometry.h"
 
 #include "Point.h"
+#include "Line.h"
 
  #if !defined(_WIN64)
  // This pragma is required only for 32-bit builds. In a 64-bit environment,
@@ -12,4 +13,10 @@ LIBGEOMETRY_API geometry::IPoint* __stdcall CreatePoint()
 {
 	geometry::IPoint* p = new geometry::Point();
 	return p;
+}
+
+LIBGEOMETRY_API geometry::ILine* __stdcall CreateLine()
+{
+	geometry::ILine* l = new geometry::Line();
+	return l;
 }

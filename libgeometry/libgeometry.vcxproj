@@ -91,12 +91,15 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="libgeometry.cpp" />
+    <ClCompile Include="Line.cpp" />
     <ClCompile Include="Point.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ILine.h" />
     <ClInclude Include="Interface.h" />
     <ClInclude Include="libgeometry.h" />
     <ClInclude Include="IPoint.h" />
+    <ClInclude Include="Line.h" />
     <ClInclude Include="Point.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

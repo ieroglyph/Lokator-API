@@ -1,7 +1,6 @@
 #pragma once
 
-#include "IPoint.h"
-#include "ILine.h"
+#include "IFactory.h"
 
 #ifdef __cplusplus
 #define EXTERN_C extern "C"
@@ -10,5 +9,4 @@
 #endif
 
 
-EXTERN_C LIBGEOMETRY_API geometry::IPoint* __stdcall CreatePoint();
-EXTERN_C LIBGEOMETRY_API geometry::ILine* __stdcall CreateLine();
+EXTERN_C LIBGEOMETRY_API geometry::IFactory* __stdcall GetFactory();

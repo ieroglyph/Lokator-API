@@ -10,3 +10,4 @@
 
 
 EXTERN_C LIBGEOMETRY_API geometry::IFactory* __stdcall GetFactory();
+EXTERN_C LIBGEOMETRY_API int __stdcall Kill(geometry::Interface* him);

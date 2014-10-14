@@ -13,7 +13,6 @@ namespace geometry
 		virtual IPoint* Point();
 		virtual ILine* Line();
 		virtual ILine* LineBy2Points(IPoint* p1, IPoint* p2);
-
 		virtual void Release();
 	};
 }

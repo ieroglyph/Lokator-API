@@ -21,7 +21,6 @@ namespace geometry
 
 	IPoint* Factory::Point()
 	{
-		
 		IPoint* p = new geometry::Point();
 		return p;
 	}
@@ -34,17 +33,25 @@ namespace geometry
 
 	ILine* Factory::LineBy2Points(IPoint* p1, IPoint* p2)
 	{
-		ILine* l = new geometry::Line();
-		l
-			->x(p1->x())
-			->y(p1->y())
-			->z(p1->z());
-		l
-			->m(p2->x() - p1->x())
-			->n(p2->y() - p1->y())
-			->p(p2->z() - p1->z());
+		ILine* l = nullptr;
+		if (
+			((p2->x() - p1->x()) != 0 ) &&
+			((p2->y() - p1->y()) != 0 ) &&
+			((p2->z() - p1->z()) != 0 ) )
+		{
+			l = new geometry::Line();
+			l
+				->x(p1->x())
+				->y(p1->y())
+				->z(p1->z());
+			l
+				->m(p2->x() - p1->x())
+				->n(p2->y() - p1->y())
+				->p(p2->z() - p1->z());
+		}
 		return l;
 	}
+
 
 }
 
